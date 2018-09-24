@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> {{name}}</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<link href="assets/css/reset.css" rel="stylesheet">
+		<link href="assets/css/style1.css" rel="stylesheet">	
+    	<script src="lib/app.js"></script>
+    	<script src="lib/database.js"></script>
+    	<script src="lib/codes.js"></script>
+    	<script src="lib/handlebars.js"></script>
+    	<script src="script.js"></script>	
+	</head>
+	<body>
+			<header class= "header">
+				<img src="assets/img/logo.png" alt="Insper">
+				<img id="icon" src="assets/img/icon.png" alt="itens">
+				<ul class="line"> 
+					<li class="line-item"> <a href="file:///C:/Users/Mendes/Desktop/Trabalhos/CoDesign/pagina/inicial.html">Projetos</a>
+					</li>
+					<li class="line-item"> <a href="portaldoaluno.html">Portal do Aluno</a>
+					</li>
+				</ul>
+			</header>
+		<div class="main">	
+			<div>
+			<h1 class="title">{{name}}</h1>
+			<div class='margem'>
+			<h2 class="subtitle">{{title1}}</h2>
+			<p>{{text1}}
+			</p>
+			</div>
+			<div id="init">
+				<img class="imgMe" src="{{img}}" id="img" alt="Apresentação de Cases">
+			</div>
+			<div class="margem">
+			<h2 class="subtitle">{{title2}}</h2>
+			<p>{{text2}}</p>
+			</div>
+			<div class='margem'>
+			<h3 class="subtitle">{{title3}} </h3>		
+			{{text3}}
+		</div>	
+	</div>
+	</div>
+		<div id= "rodape">
+			<img src="assets/img/logo-branco.png" alt="Insper">
+			<h2>Contato</h2> 
+			<p> (11) XXXX-XXXX</p>
+			<p> insper@insper.edu.br </p>
+		</div>	
+	</body>
+</html>
