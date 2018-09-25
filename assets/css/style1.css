@@ -1,172 +1,177 @@
 
-body {
-    background-color: rgb(170,3,0);
-}
+        body {
+            background-color: rgb(170,3,0);
+        }
 
-.line {
-    display: inline;
-    margin-left: 16rem;
-    font-family: 'Merriweather', serif;
-    font-size: 16pt;
-}
-.line-item {
-    display: inline-flex;
-    padding: 0.7rem;
-}
+        .line {
+            display: inline;
+            margin-left: 16rem;
+            font-family: 'Merriweather', serif;
+            font-size: 16pt;
+        }
+        .line-item {
+            display: inline-flex;
+            padding: 0.7rem;
+        }
 
-.header{
-    position: relative;
-    background-color: rgb(145,150,147);
-    padding: 0.2rem 1rem;
-    margin-left: 0rem;
-}
+        .header{
+            position: relative;
+            background-color: rgb(145,150,147);
+            padding: 0.2rem 1rem;
+            margin-left: 0rem;
+        }
 
-.main {
-    background-color: white;
-    display: flex;  
-    margin: 1rem;
-    padding: 1rem;
-}
-    
-.margem{
-    margin: 1rem;
-    width: 70%;
-    padding: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-}
+        .main {
+            background-color: white;
+            display: flex;  
+            margin: 1rem;
+            padding: 1rem;
+        }
+            
+        .margem{
+            margin: 1rem;
+            width: 70%;
+            padding: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+        }
 
-.title {
-    font-size: 24pt;
-    margin: 1rem;
-    font-family: 'Merriweather', serif;
+        .title {
+            font-size: 24pt;
+            margin: 1rem;
+            font-family: 'Merriweather', serif;
 
-}
-.subtitle {
-    font-size: 18pt;
-    font-family: 'Merriweather', serif;
-    line-height: 2rem;
+        }
+        .subtitle {
+            font-size: 18pt;
+            font-family: 'Merriweather', serif;
+            line-height: 2rem;
 
-}
+        }
 
-.item-goals  {
-    list-style-type: circle;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-}
+        .item-goals  {
+            list-style-type: circle;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+        }
 
-#img {
-    position: relative;
-    right:1.3rem;
-    top:1.6rem;
-    float: right;
-    height: 20rem;
-    width: 40rem;
-    margin-top:-8rem;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
+        #img {
+            position: relative;
+            right:1.3rem;
+            top:1.6rem;
+            float: right;
+            height: 20rem;
+            width: 40rem;
+            margin-top:-8rem;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
 
 
+        a {
+            text-decoration: none;
+            color: black;
 
-a {
-    text-decoration: none;
-    color: black;
+        }
+        a:hover {
+            text-decoration: underline;
 
-}
-a:hover {
-    text-decoration: underline;
+        }
 
-}
-
-#rodape {
-    font-family: "Montserrat" , sans-serif; 
-    position: absolute;
-    right: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: black;
-    text-align: center;
-    color: white;
-}
-    
-.imgMe {
-    padding: 60px;
-}
-#icon{
-    visibility: hidden;
-    height: 2rem;
-}
-@media only screen and (max-width: 600px) {
-    #menu {    
-    }
-    
-    .line {
-        display: none;
-    }
-    
-    .margem{
-        width: 72%;
-    }
-    
-    #img {
-        position: relative;
-        right:1.3rem;
-        top:1.6rem;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
-    
-    .imgMe {
-        padding: 0px;
-        padding-top: 100px;
-        padding-left: 28px;
-        padding-bottom: 40px;
-        max-width:300px;
-        max-height:250px;
-    }
-    
-    #icon{
-        visibility: visible;
-        margin-left: 2rem;
+        #rodape {
+            font-family: "Montserrat" , sans-serif; 
+            position: absolute;
+            right: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+            
+        .imgMe {
+            padding: 60px;
+        }
+        #icon{
+            visibility: hidden;
+            height: 2rem;
+        }
+        @media only screen and (max-width: 600px) {
+            #menu {    
             }
-    .line {
-        background-color: rgb(170,3,0);
-        display: block;
-        height: 100%;
-        width: 90%;
-        position:fixed;
-        top: 0;
-        left: -900%;
-        transition: left .3s;
-    }
+            
+            .line {
+                display: none;
+            }
+            
+            .margem{
+                width: 72%;
+            }
+            
+            #img {
+                position: relative;
+                right:1.3rem;
+                top:1.6rem;
+                flex-grow: 1;
+                flex-shrink: 1;
 
-    #icon:hover + .line {
-        left: -72%;
-        z-index: 1;
-    }
+            }
+            
+            .imgMe {
+                padding: 0px;
+                padding-top: 100px;
+                padding-left: 28px;
+                padding-bottom: 40px;
+                max-width:300px;
+                max-height:250px;
 
-    .line-item{
-        color: #FFFFFF;
-        margin: 2rem;
+            }
+            
+            #icon{
+                visibility: visible;
+                margin-left: 2rem;
+                    }
+            .line {
+                background-color: rgb(170,3,0);
+                display: block;
+                height: 100%;
+                width: 90%;
+                position:fixed;
+                top: 0;
+                left: -900%;
+                transition: left .3s;
+            }
 
-    }
-}
+            #icon:hover + .line {
+                left: -72%;
+                z-index: 1;
 
-@media only screen and (min-width: 1000px) {
-    .imgMe {
-        padding: 85px;
-        margin-top: 80px;
-    }
-    #img {
-        right:
-    }
-}
+            }
+            #icon:hover + img {
+                position: absolute;
+            }
 
-@media only screen and (min-width: 601px) and (max-width: 999px) {
-    .imgMe {
-        max-height: 500px;
-        max-width: 400px;
-        padding-top: 100px;
-    }
-}
+            .line-item{
+                color: #FFFFFF;
+                margin: 2rem;
+
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+            .imgMe {
+                padding: 85px;
+                margin-top: 80px;
+            }
+            #img {
+                right:
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 999px) {
+            .imgMe {
+                max-height: 500px;
+                max-width: 400px;
+                padding-top: 100px;
+            }
+        }
