@@ -1,58 +1,180 @@
-<!doctype html>
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title> {{name}}</title>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-		<link href="assets/css/reset.css" rel="stylesheet">
-		<link href="assets/css/style1.css" rel="stylesheet">	
-    	<script src="lib/app.js"></script>
-    	<script src="lib/database.js"></script>
-    	<script src="lib/codes.js"></script>
-    	<script src="lib/handlebars.js"></script>
-    	<script src="script.js"></script>	
-	</head>
-	<body>
-			<header class= "header">
-				<img id='logo' src="assets/img/logo.png" alt="Insper">
-				<img id="icon" src="assets/img/icon.png" alt="itens">
-				<ul class="line"> 
-					<li class="line-item"> <a href="file:///C:/Users/Mendes/Desktop/Trabalhos/CoDesign/pagina/inicial.html">Projetos</a>
-					</li>
-					<li class="line-item"> <a href="vestibular.html">Vestibular</a>
-					</li>
-					<li class="line-item"> <a href="portaldoaluno.html">Portal do Aluno</a>
-					</li>
-				</ul>
-			</header>
-		<div class="main">	
-			<div>
-			<h1 class="title">{{name}}</h1>
-			<div class='margem'>
-			<h2 class="subtitle">{{title1}}</h2>
-			<p>{{text1}}
-			</p>
-			</div>
-			<div id="init">
-				<img class="imgMe" src="{{img}}" id="img" alt="Apresentação de Cases">
-			</div>
-			<div class="margem">
-			<h2 class="subtitle">{{title2}}</h2>
-			<p>{{text2}}</p>
-			</div>
-			<div class='margem'>
-			<h3 class="subtitle">{{title3}} </h3>		
-			{{text3}}
-		</div>	
-	</div>
-	</div>
-		<div id= "rodape">
-			<img src="assets/img/logo-branco.png" alt="Insper">
-			<h2>Contato</h2> 
-			<p> (11) XXXX-XXXX</p>
-			<p> insper@insper.edu.br </p>
-		</div>	
-	</body>
-</html>
+
+        body {
+            background-color:white ;
+        }
+
+        .line {
+            display: inline;
+            margin-left: 16rem;
+            font-family: 'Merriweather', serif;
+            font-size: 16pt;
+
+        }
+        .line-item {
+            display: inline-flex;
+            padding: 0.7rem;
+            color: white;
+        }
+
+        .header{
+            border-bottom: solid;
+            position: relative;
+            background-color: rgb(170,3,0);
+            padding: 0.2rem 1rem;
+            margin-left: 0rem;
+        }
+
+        .main {
+            background-color: white;
+            display: flex;  
+            padding: 1rem;
+        }
+            
+        .margem{
+            margin: 1rem;
+            width: 70%;
+            padding: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+        }
+
+        .title {
+            font-size: 24pt;
+            margin: 1rem;
+            font-family: 'Merriweather', serif;
+
+        }
+        .subtitle {
+            font-size: 18pt;
+            font-family: 'Merriweather', serif;
+            line-height: 2rem;
+
+        }
+
+        .item-goals  {
+            list-style-type: circle;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+        }
+
+        #img {
+            position: relative;
+            right:1.3rem;
+            top:1.6rem;
+            float: right;
+            height: 20rem;
+            width: 40rem;
+            margin-top:-8rem;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        #logo {
+            padding-top: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
+        a:hover {
+            text-decoration: underline;
+
+        }
+
+        #rodape {
+            font-family: "Montserrat" , sans-serif; 
+            position: absolute;
+            right: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+            
+        .imgMe {
+            padding: 60px;
+        }
+        #icon{
+            visibility: hidden;
+            height: 3rem;
+        }
+        @media only screen and (max-width: 600px) {
+            #menu {    
+            }
+            
+            .line {
+                display: none;
+            }
+            
+            .margem{
+                width: 72%;
+            }
+            
+            #img {
+                position: relative;
+                right:1.3rem;
+                top:1.6rem;
+                flex-grow: 1;
+                flex-shrink: 1;
+
+            }
+            
+            .imgMe {
+                padding: 0px;
+                padding-top: 100px;
+                padding-left: 28px;
+                padding-bottom: 40px;
+                max-width:300px;
+                max-height:250px;
+
+            }
+            
+            #icon{
+                visibility: visible;
+                margin-left: 2rem;
+                    }
+            .line {
+                background-color: rgb(170,3,0);
+                display: block;
+                height: 100%;
+                width: 90%;
+                position:fixed;
+                border-right: solid;
+                top: 0;
+                left: -900%;
+                transition: left .3s;
+            }
+
+            #icon:hover + .line {
+                left: -75%;
+                z-index: 1;
+
+            }
+
+
+            .line-item{
+                color: #FFFFFF;
+                margin: 2rem;
+
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+            .imgMe {
+                padding: 85px;
+                margin-top: 80px;
+            }
+            #img {
+                right:
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 999px) {
+            .imgMe {
+                max-height: 500px;
+                max-width: 400px;
+                padding-top: 100px;
+            }
+        }
