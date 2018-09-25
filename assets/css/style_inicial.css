@@ -1,9 +1,13 @@
 body {
-	background-color: rgb(170,3,0);
+	background-color: white;
+}
+#logo {
+    padding-top: 1rem;
 }
 .header{
     position: relative;
-    background-color: rgb(145,150,147);
+    border-bottom: solid;
+    background-color: rgb(170,3,0);
     padding: 0.2rem 1rem;
     margin-left: 0rem;
 }
@@ -85,16 +89,17 @@ a:hover {
 
 #icon{
     visibility: hidden;
-    height: 2rem;
+    height: 3rem;
 }
 @media only screen and (max-width: 600px) {
+
     .line {
         display: none;
     }
        
 
     #icon{
-    	margin-left: 2rem;
+    	margin-left:2rem;
         visibility: visible;
             }
     .line {
@@ -103,13 +108,14 @@ a:hover {
         height: 100%;
         width: 90%;
         position:fixed;
+        border-right: solid;
         top: 0;
         left: -900%;
         transition: left .3s;
     }
 
     #icon:hover + .line {
-        left: -72%;
+        left: -75%;
     }
 
     .line-item{
