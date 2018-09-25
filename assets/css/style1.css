@@ -143,6 +143,7 @@ a:hover {
 
     #icon:hover + .line {
         left: -72%;
+        z-index: 1;
     }
 
     .line-item{
