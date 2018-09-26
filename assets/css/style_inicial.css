@@ -33,7 +33,6 @@ body {
 }
 
 .margem{
-    flex-direction: column;
     margin: 1rem;
     padding: 1rem;
     flex-basis: 1rem;
