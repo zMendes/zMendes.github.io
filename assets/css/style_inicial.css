@@ -14,9 +14,10 @@ body {
 
 
 .main {
+	align-items: center;
 	flex-direction: column;
 	margin: 1rem;
-    padding: 1rem;
+    	padding: 1rem;
 	background-color: white;
 	display: flex;
 }
@@ -33,9 +34,8 @@ body {
 }
 
 .margem{
-	flex-direction: column;
+    flex-direction: column;
     margin: 1rem;
-    width: 70%;
     padding: 1rem;
     flex-basis: 1rem;
     font-family: 'Montserrat', sans-serif;
