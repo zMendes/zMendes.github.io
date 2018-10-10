@@ -48,10 +48,13 @@ body {
     flex-shrink: 1;
 }
 
-
+.margem a:link { color: rgb(170,3,0); }
+.margem a:visited { color: rgb(170,3,0); }
+.margem a:hover { color: rgb(170,3,0); }
+.margem a:active { color: rgb(170,3,0); }
 a {
     text-decoration: none;
-    color: blue;
+    color: black;
 
 }
 h2 {
