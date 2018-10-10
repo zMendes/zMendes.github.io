@@ -1,0 +1,127 @@
+body {
+	background-color: white;
+}
+#logo {
+    padding-top: 1rem;
+}
+.header{
+    position: relative;
+    border-bottom: solid;
+    background-color: rgb(170,3,0);
+    padding: 0.2rem 1rem;
+    margin-left: 0rem;
+}
+
+
+.main {
+	flex-direction: column;
+	margin: 1rem;
+    	padding: 1rem;
+	background-color: white;
+	display: flex;
+}
+
+.line {
+    display: inline;
+    margin-left: 16rem;
+    font-family: 'Merriweather', serif;
+    font-size: 16pt;
+}
+.line-item {
+    display: inline-flex;
+    padding: 0.7rem;
+}
+
+.margem{
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+.img{
+	margin-left: auto;
+	width: 50%;
+	height: 20rem;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#aps a:link { color: rgb(170,3,0); }
+#aps a:visited { color: rgb(170,3,0); }
+#aps a:hover { color: rgb(170,3,0); }
+#aps a:active { color: rgb(170,3,0); }
+a {
+    text-decoration: none;
+    color: black;
+
+}
+h2 {
+	font-size: 1.4rem;
+	font-family: "Merriweather" , serif;
+	line-height: 2rem;
+}
+h1 {
+	padding: 1rem;
+	font-family: "Merriweather" , serif;
+	font-size: 2rem;
+}
+a:hover {
+    text-decoration: underline;
+
+}
+.item-goals  {
+    list-style-type: circle;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+#rodape {
+    font-family: "Montserrat" , sans-serif; 
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+#icon{
+    visibility: hidden;
+    height: 3rem;
+}
+@media only screen and (max-width: 600px) {
+
+    .line {
+        display: none;
+    }
+       
+
+    #icon{
+    	margin-left:2rem;
+        visibility: visible;
+            }
+    .line {
+        background-color: rgb(170,3,0);
+        display: block;
+        height: 100%;
+        width: 90%;
+        position:fixed;
+        border-right: solid;
+        top: 0;
+        left: -900%;
+        transition: left .3s;
+    }
+
+    #icon:hover + .line {
+        left: -75%;
+    }
+
+    .line-item{
+        color: #FFFFFF;
+        margin: 2rem;
+
+    }
+}
