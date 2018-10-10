@@ -48,13 +48,10 @@ body {
     flex-shrink: 1;
 }
 
-#aps a:link { color: rgb(170,3,0); }
-#aps a:visited { color: rgb(170,3,0); }
-#aps a:hover { color: rgb(170,3,0); }
-#aps a:active { color: rgb(170,3,0); }
+
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(170,3,0)
 
 }
 h2 {
